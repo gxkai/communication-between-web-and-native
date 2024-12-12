@@ -5,13 +5,16 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "iphone15": "npm run ios -- --simulator=\"iPhone 15\"",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "cleaninstallmac": "cd ios && rm -rf Pods && rm -f -- Podfile.lock && pod install"
   },
   "dependencies": {
     "react": "18.3.1",
-    "react-native": "0.76.5"
+    "react-native": "0.76.5",
+    "react-native-webview": "^13.12.5"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
